@@ -31,13 +31,7 @@ def backSubstituion(a,b):
         x[k] = (b[k]-res)/a[k][k];
     return x
 
-def solveLinierEquation(a,b):
+def solveLinierEquationWithGaussElim(a,b):
     gaussElim(a,b)
     x = backSubstituion(a,b)
     return x
-
-a = numpy.array([[4,-2,1],[-2,4,-2],[1,-2,4]],float)
-b = numpy.array([11,-16,17],float)
-
-c = solveLinierEquation(a,b)
-print(c)
