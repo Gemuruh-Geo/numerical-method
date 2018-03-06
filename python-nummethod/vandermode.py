@@ -7,15 +7,6 @@ import numpy as np
 # v is vector
 # function to create vandermode matrix
 
-
-'''
-[[ 1  1  1  1  1  1]
- [ 2  2  1  1  1  1]
- [ 5  3  2  1  1  1]
- [10  6  4  2  1  1]
- [18 10  5  3  1  1]
- [32 16  8  4  2  1]]
-'''
 def vandermode(v):
     n = len(v)
     a = np.zeros((n,n))
